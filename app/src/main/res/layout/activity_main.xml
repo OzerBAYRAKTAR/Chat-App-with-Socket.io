@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,6 +12,31 @@
        android:id="@+id/chatRv"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
+       android:layout_above="@id/ll_send"
        android:padding="10dp"/>
+   
+   <LinearLayout
+       android:id="@+id/ll_send"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_alignParentBottom="true">
+      
+      <EditText
+          android:id="@+id/et_chat_box"
+          android:layout_width="0dp" 
+          android:layout_height="match_parent"
+          android:layout_weight=".7"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/btn_Send"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight=".3"
+          android:text="Send"/>
+
+      
+   </LinearLayout>
+
+</RelativeLayout>
+
