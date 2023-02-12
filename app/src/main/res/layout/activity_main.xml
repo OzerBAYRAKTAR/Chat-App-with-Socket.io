@@ -30,6 +30,7 @@
 
       <androidx.appcompat.widget.AppCompatButton
           android:id="@+id/btn_Send"
+          android:background="#B2FF59"
           android:layout_width="0dp"
           android:layout_height="match_parent"
           android:layout_weight=".3"
