@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Chat App</string>
+    <string name="socket_url">"https://socket-io-chat.now.sh"</string>
 </resources>
